@@ -48,7 +48,7 @@
                   </div>
                 </el-col>
               </el-row>
-              <el-row class="step float-right clearfix">
+              <el-row class="step float-right clearfix mb-0">
                 <el-col :span="12">
                   <img
                     src="https://assets.calendly.com/assets/landing/homepage/booking-f274b2610c18540634cc9ab7210256b0fc582ffd01a444b328afaa93b4c88526.png"
