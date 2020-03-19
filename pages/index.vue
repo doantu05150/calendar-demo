@@ -5,6 +5,7 @@
       <el-main>
         <c-adaptive />
         <c-video />
+        <c-work />
       </el-main>
       <el-footer>
         <c-footer />
@@ -15,7 +16,7 @@
 
 <script>
 import { Header, Footer } from '@/components/common'
-import { HomeAdaptive, HomeVideo } from '@/components/home'
+import { HomeAdaptive, HomeVideo, HomeWork } from '@/components/home'
 
 export default {
   layout: 'main',
@@ -23,7 +24,8 @@ export default {
     'c-header': Header,
     'c-footer': Footer,
     'c-adaptive': HomeAdaptive,
-    'c-video': HomeVideo
+    'c-video': HomeVideo,
+    'c-work': HomeWork
   },
   data() {
     return {
