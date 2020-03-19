@@ -1,10 +1,16 @@
 .home-content {
   section {
-    padding: 35px 20px;
+    padding: 40px 20px;
 
     .sub-section {
       max-width: var(--main-width);
       margin: 0 auto;
     }
   }
+}
+
+.h-title {
+  line-height: 36px;
+  color: var(--main-text-color);
+  letter-spacing: 0.2px;
 }

@@ -6,8 +6,7 @@
           <el-container>
             <el-row type="flex" class="row-bg w-full">
               <el-col :span="12">
-                <div />
-                <div class="font-bold title">
+                <div class="font-bold h-title wide">
                   Calendly helps you schedule meetings without the
                   back-and-forth emails
                 </div>
@@ -59,15 +58,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.title {
-  padding-top: 40px;
-  line-height: 36px;
-  color: #444752;
-  font-family: 'Baloo Chettan 2', cursive;
-  font-size: 30px;
-  letter-spacing: 0.2px;
-}
-
 .des {
   font-size: 14px;
   color: #5a5a5a;
@@ -78,5 +68,10 @@ export default {
 
 .form-home {
   margin-top: 25px;
+}
+
+.wide {
+  padding-top: 40px;
+  font-size: 30px;
 }
 </style>

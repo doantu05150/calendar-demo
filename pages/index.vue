@@ -4,6 +4,7 @@
     <div class="home-content">
       <el-main>
         <c-adaptive />
+        <c-video />
       </el-main>
       <el-footer>
         <c-footer />
@@ -14,14 +15,15 @@
 
 <script>
 import { Header, Footer } from '@/components/common'
-import { HomeAdaptive } from '@/components/home'
+import { HomeAdaptive, HomeVideo } from '@/components/home'
 
 export default {
   layout: 'main',
   components: {
     'c-header': Header,
     'c-footer': Footer,
-    'c-adaptive': HomeAdaptive
+    'c-adaptive': HomeAdaptive,
+    'c-video': HomeVideo
   },
   data() {
     return {

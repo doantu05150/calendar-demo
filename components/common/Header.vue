@@ -99,9 +99,8 @@ export default {
 
       .nav-item {
         color: #666a73 !important;
-        font-size: 14px;
-        letter-spacing: 1px;
-        padding: 0 13px;
+        font-size: 16px;
+        padding: 0 14px;
         background-color: transparent;
 
         ::hover {
@@ -110,7 +109,7 @@ export default {
       }
 
       .btn {
-        padding: 6px 10px;
+        padding: 2px 16px;
         background-color: var(--main-color);
         color: #fff;
         border-radius: 4px;

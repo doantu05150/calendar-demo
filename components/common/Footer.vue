@@ -29,7 +29,7 @@
       </el-row>
     </div>
     <hr class="footer-line-break" />
-    <div class="footer m-0auto">
+    <div class="footer m-0auto clear">
       <el-row :gutter="24" align="middle">
         <el-col :span="18">
           <div>
@@ -71,6 +71,32 @@
           </div>
         </el-col>
       </el-row>
+    </div>
+    <div class="bottom-section">
+      <div class="footer m-0auto">
+        <el-row :gutter="24">
+          <el-col :span="6">
+            <span><strong>© 2020 Calendly</strong></span>
+          </el-col>
+          <el-col :span="12">
+            <span
+              >We take the work out of connecting with others so you can
+              accomplish more.</span
+            >
+          </el-col>
+          <el-col :span="6">
+            <div class="text-right">
+              <i class="bottom-media el-icon-platform-eleme" />
+              <i class="bottom-media el-icon-s-help" />
+              <i class="bottom-media el-icon-camera-solid" />
+            </div>
+          </el-col>
+        </el-row>
+        <div class="bottom-links">
+          <span>Privacy</span>
+          <span class="ml-4">Terms</span>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -194,8 +220,7 @@ export default {
 .ft-title {
   font-size: 18px;
   margin-bottom: 15px;
-  color: #444752;
-  font-family: 'Baloo Chettan 2', cursive;
+  color: var(--main-text-color);
   font-weight: 600;
   padding-top: 6px;
 }
@@ -208,9 +233,33 @@ export default {
 .ft-li {
   padding: 0;
   font-size: 16px;
-  font-family: 'Baloo Chettan 2', cursive;
   font-weight: 400;
   color: #525252;
   padding: 2px 0;
+}
+
+.clear {
+  padding-bottom: 20px;
+}
+
+.bottom-section {
+  background-color: rgba(218, 218, 218, 0.28);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 12px;
+  color: var(--main-text-color);
+}
+
+.bottom-media {
+  font-size: 18px;
+  margin: 0 4px;
+}
+
+.bottom-links {
+  padding-top: 10px;
+}
+
+.ml-4 {
+  margin-left: 16px;
 }
 </style>
