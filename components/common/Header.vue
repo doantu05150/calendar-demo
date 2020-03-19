@@ -103,7 +103,7 @@ export default {
         padding: 0 14px;
         background-color: transparent;
 
-        ::hover {
+        &::hover {
           text-decoration: underline !important;
         }
       }
@@ -114,7 +114,7 @@ export default {
         color: #fff;
         border-radius: 4px;
 
-        ::hover {
+        &::hover {
           background-color: var(--main-color-lighten);
         }
       }

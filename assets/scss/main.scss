@@ -33,6 +33,14 @@ body {
   justify-content: flex-end;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
 .m-0auto {
   margin: 0 auto;
 }
@@ -65,8 +73,17 @@ body {
 .float-right {
   float: right;
 }
+
+.right-0 {
+  right: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
 .clearfix {
-  ::after {
+  &::after {
     content: '.';
     display: block;
     height: 0;

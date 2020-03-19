@@ -7,6 +7,8 @@
         <c-video />
         <c-work />
         <c-features />
+        <c-about />
+        <c-started />
       </el-main>
       <el-footer>
         <c-footer />
@@ -21,7 +23,9 @@ import {
   HomeAdaptive,
   HomeVideo,
   HomeWork,
-  HomeFeatures
+  HomeFeatures,
+  HomeAbout,
+  HomeStarted
 } from '@/components/home'
 
 export default {
@@ -32,7 +36,9 @@ export default {
     'c-adaptive': HomeAdaptive,
     'c-video': HomeVideo,
     'c-work': HomeWork,
-    'c-features': HomeFeatures
+    'c-features': HomeFeatures,
+    'c-about': HomeAbout,
+    'c-started': HomeStarted
   },
   data() {
     return {
