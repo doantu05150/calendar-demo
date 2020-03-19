@@ -1,0 +1,17 @@
+.form-home {
+  .el-input {
+    width: 70%;
+
+    .el-input__inner {
+      height: 56px;
+      border-radius: 5px 0 0 5px;
+    }
+  }
+
+  .el-button {
+    margin-left: -1px;
+    z-index: 2;
+    border-radius: 0 5px 5px 0;
+    flex: 1;
+  }
+}

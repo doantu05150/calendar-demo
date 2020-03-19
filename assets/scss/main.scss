@@ -1,5 +1,57 @@
 :root {
   --main-color: #00a2ff;
   --main-color-lighten: #4fc3f7;
-  --main-width: 940px;
+  --main-width: 980px;
+  --container-width: 810px;
+  --footer-width: 1440px;
+}
+
+.container {
+  width: var(--container-width);
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.justify-fend {
+  justify-content: flex-end;
+}
+
+.m-0auto {
+  margin: 0 auto;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.w-full {
+  width: 100% !important;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
 }

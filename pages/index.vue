@@ -1,27 +1,27 @@
 <template>
   <div>
     <c-header :is-scroll="scrolled" />
-    <div class="content">
-      <client-only>
-        <v-date-picker
-          mode="range"
-          :value="null"
-          title-position="left"
-          color="teal"
-          is-inline
-        />
-      </client-only>
-      <el-calendar :value="null" />
+    <div class="home-content">
+      <el-main>
+        <c-adaptive />
+      </el-main>
+      <el-footer>
+        <c-footer />
+      </el-footer>
     </div>
   </div>
 </template>
 
 <script>
-import Header from '@/components/common/Header'
+import { Header, Footer } from '@/components/common'
+import { HomeAdaptive } from '@/components/home'
 
 export default {
+  layout: 'main',
   components: {
-    'c-header': Header
+    'c-header': Header,
+    'c-footer': Footer,
+    'c-adaptive': HomeAdaptive
   },
   data() {
     return {
@@ -43,7 +43,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.content {
+.home-content {
   padding-top: 95px;
 }
 </style>

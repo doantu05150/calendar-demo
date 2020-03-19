@@ -14,7 +14,14 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500;600&display=swap'
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -23,13 +30,18 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['element-ui/lib/theme-chalk/index.css'],
+  css: [
+    'element-ui/lib/theme-chalk/index.css',
+    'element-ui/lib/theme-chalk/display.css'
+  ],
   /*
    ** Plugins to load before mounting the App
    */
   plugins: [
     '@/plugins/element-ui',
     '@/assets/scss/main.scss',
+    '@/assets/scss/override-el.scss',
+    '@/assets/scss/styles.scss',
     { src: '~plugins/v-calendar.js', ssr: false }
   ],
   /*

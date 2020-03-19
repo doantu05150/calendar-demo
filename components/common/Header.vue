@@ -18,7 +18,7 @@
           <el-menu-item
             v-for="(item, index) in navItems"
             :key="`nav_${index}`"
-            :index="index + 1"
+            :index="`${index + 1}`"
             class="nav-item"
             >{{ item.title }}</el-menu-item
           >
@@ -105,7 +105,7 @@ export default {
         background-color: transparent;
 
         ::hover {
-          text-decoration: underline;
+          text-decoration: underline !important;
         }
       }
 
